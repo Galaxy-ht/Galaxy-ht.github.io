@@ -3,11 +3,11 @@
   <title>一谷</title>
   
   <subtitle>Rest in the Hope.</subtitle>
-  <link href="https://galaxy-ht.github.io/Galaxy-ht.github.io/atom.xml" rel="self"/>
+  <link href="https://galaxy-ht.github.io/atom.xml" rel="self"/>
   
-  <link href="https://galaxy-ht.github.io/Galaxy-ht.github.io/"/>
+  <link href="https://galaxy-ht.github.io/"/>
   <updated>2021-11-07T19:40:17.560Z</updated>
-  <id>https://galaxy-ht.github.io/Galaxy-ht.github.io/</id>
+  <id>https://galaxy-ht.github.io/</id>
   
   <author>
     <name>yicoo</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>Matplotlib绘图</title>
-    <link href="https://galaxy-ht.github.io/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/"/>
-    <id>https://galaxy-ht.github.io/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/</id>
+    <link href="https://galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/"/>
+    <id>https://galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/</id>
     <published>2021-11-07T17:41:31.000Z</published>
     <updated>2021-11-07T19:40:17.560Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="#1">写在前面的废话</a><br><a href="#2">曲线图</a><br><a href="#3">散点图</a><br><a href="#4">柱状图</a><br><a href="#5">面积图</a><br><a href="#6">直方图</a><br><a href="#7">箱型图</a></p><h3 id="1"> 0.写在前面的废话 </h3>用Matplotlib绘图主要有两种方法：<p>一、pyplot绘图<br>第一种是最常见的，即通过调用pyplot的api<code>import matplotlib.pyplot as plt</code>的plt去直接绘图<br>这种方式主要用于交互式绘图和编程绘图生成简单图例。</p><p>二、面向对象的API<br>Matplotlib的核心是面向对象的。如果需要对 plots 进行更多控制和自定义，我们建议直接使用对象。<br>在许多情况下，您将使用 pyplot.subplots创建一个 图形和一个或多个轴，然后处理这些对象。<br>这种方法是我们需要去掌握的，也是比较推荐使用的，即用<code>fig, ax = plt.subplots()</code><br>指定figure和axes，然后对axes单独操作。</p><center><p><img src="/Galaxy-ht.github.io/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/1.jpg"><br><font color="gray">figure axes axis（图片源于网络）</font></p></center><p>这种方式较pyplot的方式可以进行更细致的精调。</p><p>三、两种方式的区别<br>两种绘图方式plt.plot()和ax.plot()有什么区别呢</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#第一种方式</span><br><span class="line">plt.figure()</span><br><span class="line">plt.plot([1, 2, 3], [4, 5, 6])</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"># 第二种方式</span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">ax.plot([1, 2, 3], [4, 5, 6])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><p>先来看看它们各自生成的结果</p><center><p><img src="/Galaxy-ht.github.io/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/2.png"><br><font color="gray">第一种方式</font><br><br><br><img src="/Galaxy-ht.github.io/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/3.png"><br><font color="gray">第二种方式</font></p></center><p>可以发现它们生成的图像完全一致。</p><p>但从代码来看，第一种方式先生成了一个Figure画布，然后在这个画布上隐式生成一个画图区域进行画图。<br>第二种方式同时生成了Figure和axes两个对象，然后用ax对象在其区域内进行绘图。显然第二种方式更加易于解释，<br>生成的fig和ax分别对画布Figure和绘图区域Axes进行控制，第一种方式反而显得不是很直观，如果涉及到子图零<br>部件的设置，第二种方式显然会更易于使用。</p><p>这里主要以近期作业为实例介绍第二种方法。</p><h3 id="2"> 1.曲线图 </h3><h3 id="3"> 2.散点图 </h3><h3 id="4"> 3.柱状图 </h3><h3 id="5"> 4.面积图 </h3><h3 id="6"> 5.直方图 </h3><h3 id="7"> 6.箱型图 </h3>]]></content>
+    <content type="html"><![CDATA[<p><a href="#1">写在前面的废话</a><br><a href="#2">曲线图</a><br><a href="#3">散点图</a><br><a href="#4">柱状图</a><br><a href="#5">面积图</a><br><a href="#6">直方图</a><br><a href="#7">箱型图</a></p><h3 id="1"> 0.写在前面的废话 </h3>用Matplotlib绘图主要有两种方法：<p>一、pyplot绘图<br>第一种是最常见的，即通过调用pyplot的api<code>import matplotlib.pyplot as plt</code>的plt去直接绘图<br>这种方式主要用于交互式绘图和编程绘图生成简单图例。</p><p>二、面向对象的API<br>Matplotlib的核心是面向对象的。如果需要对 plots 进行更多控制和自定义，我们建议直接使用对象。<br>在许多情况下，您将使用 pyplot.subplots创建一个 图形和一个或多个轴，然后处理这些对象。<br>这种方法是我们需要去掌握的，也是比较推荐使用的，即用<code>fig, ax = plt.subplots()</code><br>指定figure和axes，然后对axes单独操作。</p><center><p><img src="/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/1.jpg"><br><font color="gray">figure axes axis（图片源于网络）</font></p></center><p>这种方式较pyplot的方式可以进行更细致的精调。</p><p>三、两种方式的区别<br>两种绘图方式plt.plot()和ax.plot()有什么区别呢</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#第一种方式</span><br><span class="line">plt.figure()</span><br><span class="line">plt.plot([1, 2, 3], [4, 5, 6])</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"># 第二种方式</span><br><span class="line">fig, ax = plt.subplots()</span><br><span class="line">ax.plot([1, 2, 3], [4, 5, 6])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><p>先来看看它们各自生成的结果</p><center><p><img src="/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/2.png"><br><font color="gray">第一种方式</font><br><br><br><img src="/Galaxy-ht.github.io/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/3.png"><br><font color="gray">第二种方式</font></p></center><p>可以发现它们生成的图像完全一致。</p><p>但从代码来看，第一种方式先生成了一个Figure画布，然后在这个画布上隐式生成一个画图区域进行画图。<br>第二种方式同时生成了Figure和axes两个对象，然后用ax对象在其区域内进行绘图。显然第二种方式更加易于解释，<br>生成的fig和ax分别对画布Figure和绘图区域Axes进行控制，第一种方式反而显得不是很直观，如果涉及到子图零<br>部件的设置，第二种方式显然会更易于使用。</p><p>这里主要以近期作业为实例介绍第二种方法。</p><h3 id="2"> 1.曲线图 </h3><h3 id="3"> 2.散点图 </h3><h3 id="4"> 3.柱状图 </h3><h3 id="5"> 4.面积图 </h3><h3 id="6"> 5.直方图 </h3><h3 id="7"> 6.箱型图 </h3>]]></content>
     
     
       
@@ -34,30 +34,30 @@
     
     
     
-    <category term="数据可视化" scheme="https://galaxy-ht.github.io/Galaxy-ht.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    <category term="数据可视化" scheme="https://galaxy-ht.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>是谁住在深海的大菠萝里~~</title>
-    <link href="https://galaxy-ht.github.io/Galaxy-ht.github.io/2021/10/23/Hello-world-0/"/>
-    <id>https://galaxy-ht.github.io/Galaxy-ht.github.io/2021/10/23/Hello-world-0/</id>
+    <link href="https://galaxy-ht.github.io/2021/10/23/Hello-world-0/"/>
+    <id>https://galaxy-ht.github.io/2021/10/23/Hello-world-0/</id>
     <published>2021-10-22T17:02:40.000Z</published>
     <updated>2021-11-07T16:47:02.161Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/Galaxy-ht.github.io/Galaxy-ht.github.io/2021/10/23/Hello-world-0/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D.JPG"><br>海绵宝宝！</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/Galaxy-ht.github.io/2021/10/23/Hello-world-0/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D.JPG"><br>海绵宝宝！</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/Galaxy-ht.github.io/Galaxy-ht.github.io/2021/10/23/Hello-world-0/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D.JPG&quot;&gt;&lt;br&gt;海绵宝宝！&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/Galaxy-ht.github.io/2021/10/23/Hello-world-0/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D.JPG&quot;&gt;&lt;br&gt;海绵宝宝！&lt;/p&gt;
 </summary>
       
     
     
     
     
-    <category term="The first page." scheme="https://galaxy-ht.github.io/Galaxy-ht.github.io/tags/The-first-page/"/>
+    <category term="The first page." scheme="https://galaxy-ht.github.io/tags/The-first-page/"/>
     
   </entry>
   
