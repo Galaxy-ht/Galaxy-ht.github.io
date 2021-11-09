@@ -17,23 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>是谁住在深海的大菠萝里~~ | 一谷de博客</title>
-  <meta name="description" content="海绵宝宝！">
+  <title>一谷de博客</title>
+  <meta name="description" content="&#x2F;**  * StyleFix 1.0.3 &amp; PrefixFree 1.0.7  * @author Lea Verou  * MIT license  *&#x2F;  (function(){  if(!window.addEventListener) {   return; }  var self &#x3D; window.StyleFix &#x3D; {   link: function(link) {">
 <meta property="og:type" content="article">
-<meta property="og:title" content="是谁住在深海的大菠萝里~~">
-<meta property="og:url" content="https://galaxy-ht.github.io/2021/10/23/Hello-world-0/index.html">
+<meta property="og:title" content="一谷">
+<meta property="og:url" content="https://galaxy-ht.github.io/2021/11/09/SecondLucky/js/prefixfree.min/index.html">
 <meta property="og:site_name" content="一谷">
-<meta property="og:description" content="海绵宝宝！">
+<meta property="og:description" content="&#x2F;**  * StyleFix 1.0.3 &amp; PrefixFree 1.0.7  * @author Lea Verou  * MIT license  *&#x2F;  (function(){  if(!window.addEventListener) {   return; }  var self &#x3D; window.StyleFix &#x3D; {   link: function(link) {">
 <meta property="og:locale">
-<meta property="og:image" content="https://galaxy-ht.github.io/2021/10/23/Hello-world-0/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D.jpg">
-<meta property="article:published_time" content="2021-10-22T17:02:40.000Z">
-<meta property="article:modified_time" content="2021-11-09T00:54:39.156Z">
+<meta property="article:published_time" content="2021-11-09T06:10:17.087Z">
+<meta property="article:modified_time" content="2014-03-26T04:25:32.000Z">
 <meta property="article:author" content="yicoo">
-<meta property="article:tag" content="The first page.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://galaxy-ht.github.io/2021/10/23/Hello-world-0/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D.jpg">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://galaxy-ht.github.io/2021/10/23/Hello-world-0/index.html">
+  <link rel="canonical" href="https://galaxy-ht.github.io/2021/11/09/SecondLucky/js/prefixfree.min/index.html">
   
     <link rel="alternate" href="/atom.xml" title="一谷" type="application/atom+xml">
   
@@ -339,32 +336,19 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-Hello-world-0" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-SecondLucky/js/prefixfree.min" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
-      
-        
-  
-    <h1 class="article-title" itemprop="name">
-      是谁住在深海的大菠萝里~~
-    </h1>
-  
-
       
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/10/23/Hello-world-0/" class="article-date">
-	  <time datetime="2021-10-22T17:02:40.000Z" itemprop="datePublished">2021-10-23</time>
+	<a href="/2021/11/09/SecondLucky/js/prefixfree.min/" class="article-date">
+	  <time datetime="2021-11-09T06:10:17.087Z" itemprop="datePublished">2021-11-09</time>
 	</a>
 </span>
         
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/The-first-page/" rel="tag">The first page.</a>
-  </span>
-
 
         
 	<span class="article-read hidden-xs">
@@ -375,21 +359,258 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/10/23/Hello-world-0/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/11/09/SecondLucky/js/prefixfree.min/#comments" class="article-comment-link">Comments</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 4(words)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 755(words)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1(minutes)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4(minutes)</span>
 	
 
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p><img src="/2021/10/23/Hello-world-0/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D.jpg"><br>海绵宝宝！</p>
+        /**
+ * StyleFix 1.0.3 & PrefixFree 1.0.7
+ * @author Lea Verou
+ * MIT license
+ */
 
+(function(){
+
+if(!window.addEventListener) {
+  return;
+}
+
+var self = window.StyleFix = {
+  link: function(link) {
+    try {
+      // Ignore stylesheets with data-noprefix attribute as well as alternate stylesheets
+      if(link.rel !== 'stylesheet' || link.hasAttribute('data-noprefix')) {
+        return;
+      }
+    }
+    catch(e) {
+      return;
+    }
+
+    var url = link.href || link.getAttribute('data-href'),
+        base = url.replace(/[^\/]+$/, ''),
+        base_scheme = (/^[a-z]{3,10}:/.exec(base) || [''])[0],
+        base_domain = (/^[a-z]{3,10}:\/\/[^\/]+/.exec(base) || [''])[0],
+        base_query = /^([^?]*)\??/.exec(url)[1],
+        parent = link.parentNode,
+        xhr = new XMLHttpRequest(),
+        process;
+
+    xhr.onreadystatechange = function() {
+      if(xhr.readyState === 4) {
+        process();
+      }
+    };
+
+    process = function() {
+        var css = xhr.responseText;
+
+        if(css && link.parentNode && (!xhr.status || xhr.status < 400 || xhr.status > 600)) {
+          css = self.fix(css, true, link);
+
+          // Convert relative URLs to absolute, if needed
+          if(base) {
+            css = css.replace(/url\(\s*?((?:"|')?)(.+?)\1\s*?\)/gi, function($0, quote, url) {
+              if(/^([a-z]{3,10}:|#)/i.test(url)) { // Absolute & or hash-relative
+                return $0;
+              }
+              else if(/^\/\//.test(url)) { // Scheme-relative
+                // May contain sequences like /../ and /./ but those DO work
+                return 'url("' + base_scheme + url + '")';
+              }
+              else if(/^\//.test(url)) { // Domain-relative
+                return 'url("' + base_domain + url + '")';
+              }
+              else if(/^\?/.test(url)) { // Query-relative
+                return 'url("' + base_query + url + '")';
+              }
+              else {
+                // Path-relative
+                return 'url("' + base + url + '")';
+              }
+            });
+
+            // behavior URLs shoudn’t be converted (Issue #19)
+            // base should be escaped before added to RegExp (Issue #81)
+            var escaped_base = base.replace(/([\\\^\$*+[\]?{}.=!:(|)])/g,"\\$1");
+            css = css.replace(RegExp('\\b(behavior:\\s*?url\\(\'?"?)' + escaped_base, 'gi'), '$1');
+            }
+
+          var style = document.createElement('style');
+          style.textContent = css;
+          style.media = link.media;
+          style.disabled = link.disabled;
+          style.setAttribute('data-href', link.getAttribute('href'));
+
+          parent.insertBefore(style, link);
+          parent.removeChild(link);
+
+          style.media = link.media; // Duplicate is intentional. See issue #31
+        }
+    };
+
+    try {
+      xhr.open('GET', url);
+      xhr.send(null);
+    } catch (e) {
+      // Fallback to XDomainRequest if available
+      if (typeof XDomainRequest != "undefined") {
+        xhr = new XDomainRequest();
+        xhr.onerror = xhr.onprogress = function() {};
+        xhr.onload = process;
+        xhr.open("GET", url);
+        xhr.send(null);
+      }
+    }
+
+    link.setAttribute('data-inprogress', '');
+  },
+
+  styleElement: function(style) {
+    if (style.hasAttribute('data-noprefix')) {
+      return;
+    }
+    var disabled = style.disabled;
+
+    style.textContent = self.fix(style.textContent, true, style);
+
+    style.disabled = disabled;
+  },
+
+  styleAttribute: function(element) {
+    var css = element.getAttribute('style');
+
+    css = self.fix(css, false, element);
+
+    element.setAttribute('style', css);
+  },
+
+  process: function() {
+    // Linked stylesheets
+    $('link[rel="stylesheet"]:not([data-inprogress])').forEach(StyleFix.link);
+
+    // Inline stylesheets
+    $('style').forEach(StyleFix.styleElement);
+
+    // Inline styles
+    $('[style]').forEach(StyleFix.styleAttribute);
+  },
+
+  register: function(fixer, index) {
+    (self.fixers = self.fixers || [])
+      .splice(index === undefined? self.fixers.length : index, 0, fixer);
+  },
+
+  fix: function(css, raw, element) {
+    for(var i=0; i<self.fixers.length; i++) { css="self.fixers[i](css," raw, element) || css; } return }, camelcase: function(str) str.replace( -([a-z]) g, function($0, $1) $1.touppercase(); }).replace('-',''); decamelcase: [a-z] function($0) '-' + $0.tolowercase() }); }; ************************************** * process styles (function(){ settimeout(function(){ $('link[rel="stylesheet" ]').foreach(stylefix.link); 10); document.addeventlistener('domcontentloaded', stylefix.process, false); })(); function $(expr, con) [].slice.call((con document).queryselectorall(expr)); ** prefixfree (function(root){ if(!window.stylefix !window.getcomputedstyle) return; private helper fix(what, before, after, replacement, css) what="self[what];" if(what.length) var regex="RegExp(before" '(' what.join('|') ')' 'gi'); replacement); self="window.PrefixFree" = prefixcss: function(css, prefix="self.prefix;" gradient angles hotfix if(self.functions.indexof('linear-gradient')> -1) {
+      // Gradients are supported with a prefix, convert angles to legacy
+      css = css.replace(/(\s|:|,)(repeating-)?linear-gradient\(\s*(-?\d*\.?\d*)deg/ig, function ($0, delim, repeating, deg) {
+        return delim + (repeating || '') + 'linear-gradient(' + (90-deg) + 'deg';
+      });
+    }
+
+    css = fix('functions', '(\\s|:|,)', '\\s*\\(', '$1' + prefix + '$2(', css);
+    css = fix('keywords', '(\\s|:)', '(\\s|;|\\}|$)', '$1' + prefix + '$2$3', css);
+    css = fix('properties', '(^|\\{|\\s|;)', '\\s*:', '$1' + prefix + '$2:', css);
+
+    // Prefix properties *inside* values (issue #8)
+    if (self.properties.length) {
+      var regex = RegExp('\\b(' + self.properties.join('|') + ')(?!:)', 'gi');
+
+      css = fix('valueProperties', '\\b', ':(.+?);', function($0) {
+        return $0.replace(regex, prefix + "$1")
+      }, css);
+    }
+
+    if(raw) {
+      css = fix('selectors', '', '\\b', self.prefixSelector, css);
+      css = fix('atrules', '@', '\\b', '@' + prefix + '$1', css);
+    }
+
+    // Fix double prefixing
+    css = css.replace(RegExp('-' + prefix, 'g'), '-');
+
+    // Prefix wildcard
+    css = css.replace(/-\*-(?=[a-z]+)/gi, self.prefix);
+
+    return css;
+  },
+
+  property: function(property) {
+    return (self.properties.indexOf(property)? self.prefix : '') + property;
+  },
+
+  value: function(value, property) {
+    value = fix('functions', '(^|\\s|,)', '\\s*\\(', '$1' + self.prefix + '$2(', value);
+    value = fix('keywords', '(^|\\s)', '(\\s|$)', '$1' + self.prefix + '$2$3', value);
+
+    // TODO properties inside values
+
+    return value;
+  },
+
+  // Warning: Prefixes no matter what, even if the selector is supported prefix-less
+  prefixSelector: function(selector) {
+    return selector.replace(/^:{1,2}/, function($0) { return $0 + self.prefix })
+  },
+
+  // Warning: Prefixes no matter what, even if the property is supported prefix-less
+  prefixProperty: function(property, camelCase) {
+    var prefixed = self.prefix + property;
+
+    return camelCase? StyleFix.camelCase(prefixed) : prefixed;
+  }
+};
+
+/**************************************
+ * Properties
+ **************************************/
+(function() {
+  var prefixes = {},
+    properties = [],
+    shorthands = {},
+    style = getComputedStyle(document.documentElement, null),
+    dummy = document.createElement('div').style;
+
+  // Why are we doing this instead of iterating over properties in a .style object? Cause Webkit won't iterate over those.
+  var iterate = function(property) {
+    if(property.charAt(0) === '-') {
+      properties.push(property);
+
+      var parts = property.split('-'),
+        prefix = parts[1];
+
+      // Count prefix uses
+      prefixes[prefix] = ++prefixes[prefix] || 1;
+
+      // This helps determining shorthands
+      while(parts.length > 3) {
+        parts.pop();
+
+        var shorthand = parts.join('-');
+
+        if(supported(shorthand) && properties.indexOf(shorthand) === -1) {
+          properties.push(shorthand);
+        }
+      }
+    }
+  },
+  supported = function(property) {
+    return StyleFix.camelCase(property) in dummy;
+  }
+
+  // Some browsers have numerical indices for the properties, some don't
+  if(style.length > 0) {
+    for(var i=0; i</self.fixers.length;>
       
     </div>
     <div class="article-footer">
@@ -398,7 +619,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://galaxy-ht.github.io/2021/10/23/Hello-world-0/" title="是谁住在深海的大菠萝里~~" target="_blank" rel="external">https://galaxy-ht.github.io/2021/10/23/Hello-world-0/</a>
+      <a href="https://galaxy-ht.github.io/2021/11/09/SecondLucky/js/prefixfree.min/" title="" target="_blank" rel="external">https://galaxy-ht.github.io/2021/11/09/SecondLucky/js/prefixfree.min/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -445,9 +666,13 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2021/11/08/Matplotlib%E7%BB%98%E5%9B%BE/" title="Matplotlib绘图"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+      <a href="/2021/11/09/SecondLucky/js/three.min/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
     </li>
     
+    
+    <li class="next">
+      <a href="/2021/11/09/SecondLucky/js/index/" title="(no title)"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>
